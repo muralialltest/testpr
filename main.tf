@@ -1,14 +1,10 @@
 terraform {
   required_providers {
     random = {
-      source = "hashicorp/random"
+      source  = "hashicorp/random"
       version = "3.4.3"
     }
   }
-}
-
-provider "random" {
-  # Configuration options
 }
 
 resource "random_password" "password" {
@@ -18,5 +14,5 @@ resource "random_password" "password" {
 }
 
 output "random_password" {
- value= random_password.password
+  value = random_password.password
 }
