@@ -13,6 +13,6 @@ resource "random_password" "password" {
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
 
-output "random_password" {
+output "random_passwords" {
   value = random_password.password
 }
