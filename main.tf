@@ -13,7 +13,7 @@ resource "random_password" "password" {
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
 
-output "random_passwords_cloud_b2" {
+output "random_passwords_cloud_b3" {
   value = random_password.password
   sensitive = true
 }
